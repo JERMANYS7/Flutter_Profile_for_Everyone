@@ -19,12 +19,15 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'My Profile'),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
+
+
 
   final String title;
 
@@ -45,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
         children: <Widget>[
           Image.asset("images/profile3.jpg"),
           const SizedBox(
-            height: 20,
+            height: 10,
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -110,7 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       style: TextStyle(fontSize: 16),
                     ),
                     const SizedBox(
-                      height: 24,
+                      height: 10,
                     ),
                     ElevatedButton(
                       onPressed: () {
