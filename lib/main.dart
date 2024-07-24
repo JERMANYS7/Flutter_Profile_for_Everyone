@@ -114,7 +114,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     ElevatedButton(
                       onPressed: () {
-                        Get.to(const AboutPage());
+                        Get.to(
+                          const AboutPage()
+                          );
                       },
                       child: const Text('About Me'),
                     )
