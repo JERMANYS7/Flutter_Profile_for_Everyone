@@ -10,7 +10,7 @@ class AboutPage extends StatefulWidget {
 }
 
 class _AboutPageState extends State<AboutPage> {
-  var items = List<String>.generate(20, (i) => 'Phisan $i');
+  var items = List<String>.generate(20, (i) => 'guy $i');
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +30,7 @@ class _AboutPageState extends State<AboutPage> {
             ),
             child: GFListTile(
               titleText: items[index],
-              subTitleText: 'computer science',
+              subTitleText: 'nice man!!',
               icon: const Icon(Icons.favorite),
             ),
           );
